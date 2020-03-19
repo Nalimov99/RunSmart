@@ -1,0 +1,28 @@
+.feed-form
+    display: flex
+    flex-direction: column
+    width: 300px
+    margin-top: 36px
+    input
+        height: 50px
+        border-radius: 5px
+        background-color: #ffffff
+        border: none
+        padding: 0 20px
+        margin-bottom: 15px
+        font-size: 14px
+        font-weight: 300
+        color: $almost_black
+        //deleting rows from input
+        &[type="number"]::-webkit-outer-spin-button, &[type="number"]::-webkit-inner-spin-button
+            -webkit-appearance: none
+            margin: 0
+        &[type="number"] 
+            -moz-appearance: textfield
+            &:hover
+                -moz-appearance: number-input
+            &:focus
+                -moz-appearance: number-input
+
+        &:last-child
+            margin-bottom: 20px
