@@ -9,7 +9,14 @@
     color: #ffffff
     text-transform: uppercase
     border: none
+    cursor: pointer
     margin-top: 8px
+    transition: 0.2s all
+    outline: none
+    &:hover
+       background-color: darken($main_color, 5% ) 
+    &:active
+        background-color: darken($main_color, 10% ) 
     &_width
         width: 300px
         height: 50px
@@ -21,3 +28,7 @@
         height: 55px
         font-size: 16px
         font-weight: 500
+    &_mini
+        width: 131px
+        height: 40px
+        font-size: 14px
