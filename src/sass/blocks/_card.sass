@@ -4,6 +4,7 @@
     border: solid 2px #e8e8e8
     padding: 20px 20px 26px 21px
     box-sizing: border-box
+    overflow: hidden
     &__img
         width: 140px
         height: 200px
@@ -28,6 +29,54 @@
         text-align: center
         color: $main_color
         margin-top: 17px
+        text-transform: uppercase
+    &__wrapper
+        display: flex
+        width: calc( 200% + 40px )
+    &__content
+        width: 50%
+        transform: translateX(-100%)
+        margin-right: 0px
+        transition: 0.5s all
+        &_active
+            transform: translateX(0)
+            margin-right: 20px
+    &__full-descr
+        width: 50%
+        margin-left: 20px
+        font-size: 14px
+        font-weight: 300
+        color: #555555
+        list-style: none
+        padding: 0 3px 0 0
+        position: relative
+        transition: 0.5s all
+
+        &_active
+            transform: translateX(-100%)
+            margin: 0
+        li 
+            margin-bottom: 20px
+            position: relative
+            &::before
+                content: ' '
+                position: absolute
+                width: 5px
+                height: 5px
+                left: -14px
+                top: 7px
+                background-color: $main_color
+    &__link-back
+        font-size: 14px
+        font-weight: 500
+        position: absolute
+        bottom: 0
+        color: $main_color
+        transform: translateX(calc(50% + 70px ))
+        text-transform: uppercase
+        
+
+            
     hr 
         border-color: #e8e8e8
         border-bottom: none

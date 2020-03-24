@@ -16,4 +16,15 @@ $(document).ready(function(){
             }
         ]
     });
+    function toggleSlide(item) {
+      $(item).each(function(i) {
+        $(this).on('click', function(e){
+          e.preventDefault();
+          $('.card__content').eq(i).toggleClass('card__content_active');
+          $('.card__full-descr').eq(i).toggleClass('card__full-descr_active');
+        })
+      })
+    }
+    toggleSlide('.card__link');
+    toggleSlide('.card__link-back');
   });
