@@ -16,6 +16,13 @@ $(document).ready(function(){
             }
         ]
     });
+
+    $('ul.tab').on('click', 'li:not(.tab__item_active)', function() {
+      $(this)
+        .addClass('tab__item_active').siblings().removeClass('tab__item_active')
+        .closest('div.container').find('div.catalog__item').removeClass('catalog__item_active').eq($(this).index()).addClass('catalog__item_active');
+    });
+
     function toggleSlide(item) {
       $(item).each(function(i) {
         $(this).on('click', function(e){
