@@ -1,0 +1,40 @@
+.overlay
+    display: none
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0, 0.67)
+    position: fixed
+    top: 0
+.modal
+    box-sizing: border-box
+    width: 380px
+    min-height: 400px
+    background-color: #f2f2f2
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 38px 40px 40px 40px
+    &__close
+        font-size: 40px
+        line-height: 21px
+        position: absolute
+        color: $main_color
+        top: 0
+        right: -40px
+        cursor: pointer
+    &__title
+        color: $almost_black
+        font-size: 18px
+        font-weight: 700
+        text-align: center
+    &__descr
+        color: $almost_black
+        font-size: 14px
+        font-weight: normal
+        text-align: center
+        margin-top: 10px
+    &_mini
+        min-height: 140px
+#order, #thanks, #consultation
+    display: none
