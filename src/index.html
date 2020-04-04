@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>RunSmart</title>
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="top">
         <div class="container">
             <header class="header">
                 <a href="" class="header__logo">
@@ -106,7 +103,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div><img src="img/carousel/1.jpg" alt="1"></div>
@@ -114,7 +111,7 @@
                 <div><img src="img/carousel/3.jpg" alt="3"></div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -418,7 +415,6 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
     </section>
@@ -518,6 +514,10 @@
             <div class="modal__descr">Наш менеджер свяжеться с вами в ближайшее время!</div>
         </div>
     </div>
+
+    <a href="#top" class="to-top">
+        <img src="icons/arrow-up.svg" alt="up">
+    </a>
     
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
